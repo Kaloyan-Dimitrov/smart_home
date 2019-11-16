@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
       ),
       home: MyHomePage(),
     );
-
   }
 }
 
@@ -38,22 +37,26 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        IconButton(
-          icon:
-              Icon(checked ? MdiIcons.lightbulbOn : MdiIcons.lightbulbOutline),
-          onPressed: () => {
-            setState(() => {checked = !checked}),
-            Firestore.instance.runTransaction((Transaction tx) async {
-              DocumentSnapshot postSnapshot = await tx.get(lampRef);
-              if (postSnapshot.exists) {
-                await tx.update(lampRef, <String, bool>{'isOn': checked});
-              }
-            })
-          },
-          iconSize: 128,
-        ),
-      ])),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center, 
+          children: [
+            IconButton(
+              icon:
+                  Icon(checked ? MdiIcons.lightbulbOn : MdiIcons.lightbulbOutline),
+              onPressed: () => {
+                setState(() => {checked = !checked}),
+                Firestore.instance.runTransaction((Transaction tx) async {
+                  DocumentSnapshot postSnapshot = await tx.get(lampRef);
+                  if (postSnapshot.exists) {
+                    await tx.update(lampRef, <String, bool>{'isOn': checked});
+                  }
+                })
+              },
+              iconSize: 128,
+            ),
+          ]
+        )
+      ),
     );
   }
 }
