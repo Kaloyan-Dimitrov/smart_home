@@ -10,6 +10,8 @@ admin.initializeApp({
 let db = admin.firestore();
 db.collection("lampStates").doc("main")
     .onSnapshot(function (doc) {
+        console.log(LEDPin);
+        console.log(Gpio);
         console.log("Current data: ", doc.data());
         console.log('Writing :', doc.data().isOn ? 1 : 0);
         LEDPin.writeSync(doc.data().isOn ? 1 : 0);
