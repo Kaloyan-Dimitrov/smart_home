@@ -1,7 +1,6 @@
-# /RPi/smartlamps-c8015-839601f81fdc.json
-
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
 .vscode/
 node_modules/
+/RPi/SmartLamps-f44d9ee76876.json
