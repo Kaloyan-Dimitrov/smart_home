@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "131077157744",
+    "firebase_url": "https://smartlamps-c8015.firebaseio.com",
+    "project_id": "smartlamps-c8015",
+    "storage_bucket": "smartlamps-c8015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131077157744:android:a0db36c88f0a1ecc3e55b5",
+        "android_client_info": {
+          "package_name": "com.kaloyan.smart_home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131077157744-8k8icb103cqbp7fh031b9qb6t4r5agij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOz8mRn0Vcq7OJyp29jkp0udAfsozH5YE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131077157744-8k8icb103cqbp7fh031b9qb6t4r5agij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
