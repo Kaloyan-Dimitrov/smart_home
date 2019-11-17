@@ -3,4 +3,4 @@
 # is commented out by default.
 .vscode/
 node_modules/
-/RPi/SmartLamps-f44d9ee76876.json
+SmartLamps-f44d9ee76876.json
